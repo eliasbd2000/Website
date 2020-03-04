@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Comfortaa&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0 20px;
+    flex: 1;
+}
+
+body {
+    line-height: 1.5;
+    background-image: linear-gradient(#c9daea,#8d99ae,#e5e5e5, #e5e5e5);
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+h1,h2,h3, nav, footer {
+    font-family: 'Comfortaa', cursive;
+}
+
+p  {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #222433;
+    position: relative;
+}
+
+nav ul {
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li a {
+    transition: all 0.5s ease 0s;
+    font-size: 1.7rem;
+    color: #F7F7FF;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.active a {
+    color: #eb091e;
+    box-shadow: 1px 8px 10px 1px #000000;
+}
+
+h1 {
+    color: #EB091E;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 1.25;
+}
+
+h2 {
+    color: black;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #F7F7FF;
+    background-color: #293241;
+    padding: 20px;
+}
+
+a.footerlink {
+    color: #F7F7FF;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover, a.footerlink:hover {
+    color: #eb091e;
+    transition-duration: 0.5s;
+}
+
+.formulier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media all and (min-width: 41rem) {
+    h1 {
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around; /*zodat er aan de linker kant ook nog ruimte is */
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    nav ul li a {
+        display: inline;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    footer a.footerlink {
+        font-size: 2rem;
+    }
+
+    main {
+        max-width: 50rem;
+        margin: 10px auto;
+    }
+}
+@media all and (min-width: 90rem) {
+    main {
+        max-width: 100%;
+    }
+    nav ul {
+        justify-content: flex-end;
+        margin-right:5%;
+    }
+
+    nav ul li {
+        margin-left: 5%;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding-left: 10px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    main p {
+        padding-left: 10px;
+        max-width: 60rem;
+        font-size: 1.4rem;
+        padding-right: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
